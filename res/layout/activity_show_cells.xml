@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+   	    android:id="@+id/ll_show_cells_menu"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:divider="@drawable/divider_vertical"
+	    android:showDividers="middle"
+	    android:orientation="horizontal" >
+	    <Button 
+	        android:id="@+id/bt_activity_item_save"
+	        android:onClick="saveOneRow"
+	        style="@style/MyStyle_head_Button"
+	        android:textColor="#FF0000"
+	        android:layout_width="60dp"
+	        android:background="@drawable/excel_bt_save_color_bg"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:text="保存"
+	        />
+	    <Button
+	        android:id="@+id/bt_activity_item_select" 
+	        style="@style/MyStyle_head_Button"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_width="120dp"
+	    	android:text="选择"
+	        />
+	    <LinearLayout 
+	   	    android:id="@+id/ll_show_cells"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:descendantFocusability="blocksDescendants"
+		    android:orientation="horizontal" >
+   		
+		    <com.app.jianyiexcel.view.LinearLayoutScrollContainer
+		        android:id="@+id/ll_scrooll_container"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:focusable="true" >
+		        
+			    <com.app.jianyiexcel.view.CellHorizontalScrollView 
+			        android:id="@+id/cHSV_horizontal"
+			        android:layout_width="match_parent"
+			    	android:layout_height="match_parent"
+			    	android:scrollbars="none"
+			    	android:focusable="true"
+			        >
+			        <LinearLayout 
+			            android:id="@+id/ll_horizontal"
+			            android:focusable="true"
+			            android:divider="@drawable/divider_vertical"
+			            android:showDividers="middle"
+			            android:layout_width="match_parent"
+			    		android:layout_height="match_parent">
+				       <TextView
+				            android:id="@+id/tv_show_cell_menu" 
+					        android:text=""
+					        android:textAppearance="?android:attr/textAppearanceMedium"
+					        android:gravity="center"
+					        android:layout_width="match_parent"
+					        android:textSize="16sp"
+					        android:background="@null"
+					    	android:layout_height="match_parent"
+			        	/>
+			       </LinearLayout>
+			    </com.app.jianyiexcel.view.CellHorizontalScrollView >
+		    </com.app.jianyiexcel.view.LinearLayoutScrollContainer>    
+		</LinearLayout>
+    </LinearLayout>
+   	
+	
+	<LinearLayout 
+           android:focusable="false"
+           android:divider="@drawable/divider_vertical"
+           android:background="#66CCFF"
+           android:showDividers="middle"
+           android:layout_width="match_parent"
+   		   android:layout_height="40dp">
+	  	<TextView 
+	        android:id="@+id/tv_activity_id"
+	        android:text="序号"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:gravity="center"
+	        android:layout_width="40dp"
+	        android:textSize="14sp"
+	        android:background="@null"
+	    	android:layout_height="match_parent"
+	        />
+	    <Button 
+	        android:background="#006699"
+	        android:id="@+id/bt_activity_item_cell"
+	        style="@style/MyStyle_Button"
+	        android:layout_margin="0dp"
+	        android:layout_width="106dp"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:text="首行中的各项"
+	        />
+	    <Button 
+	        android:id="@+id/et_activity_item_cell"
+	        style="@style/MyStyle_EditText"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:inputType="textMultiLine"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	    	android:text="填入的值"
+	        />
+   	</LinearLayout>
+	<View
+       android:background="#666666" 
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+    />
+    <ListView
+      android:id="@+id/lv_show_cells" 
+      android:divider="@drawable/driver_h"
+ 	  android:layout_height="match_parent"
+ 	  android:layout_width="match_parent"
+ 	></ListView>
+	
+</LinearLayout>

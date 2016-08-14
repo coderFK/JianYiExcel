@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/excel_list_item_color_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    <LinearLayout 
+        android:id="@+id/ll_tv_item_row_id"
+        android:background="#66CCFF"
+        android:layout_height="match_parent"
+        android:layout_width="40dp"
+        >
+        <TextView 
+	        android:id="@+id/tv_item_row_id"
+	        android:text="序号"
+	        android:gravity="center"
+	        android:layout_width="40dp"
+	        android:textSize="10sp"
+	        android:layout_margin="3dp"
+	        android:focusable="true"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:background="#666666" 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        />
+    <com.app.jianyiexcel.view.LinearLayoutScrollContainer 
+        android:id="@+id/ll_row_scrooll_container"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.app.jianyiexcel.view.CellHorizontalScrollView 
+            android:id="@+id/cHSV_row_scrooll_container"
+        	android:scrollbars="none"
+	        android:focusable="true"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            >
+            <LinearLayout 
+                android:focusable="true"
+		        android:id="@+id/ll_item_row"
+		        android:divider="@drawable/divider_vertical"
+		        android:showDividers="middle"
+		        android:layout_width="match_parent"
+		        android:orientation="horizontal"
+		    	android:layout_height="wrap_content">
+                
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+       			<TextView
+                    android:id="@+id/textView2"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/textView10"
+                   style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/MyStyle_TextView"
+                    android:layout_marginLeft="3dp"
+        			android:layout_marginRight="3dp"
+                    android:textSize="12sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+		                
+   		 	</LinearLayout>
+        </com.app.jianyiexcel.view.CellHorizontalScrollView>
+    </com.app.jianyiexcel.view.LinearLayoutScrollContainer>
+    
+
+</LinearLayout>

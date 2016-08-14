@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/driver_h"
+    android:showDividers="middle"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:background="#FFFFFF" 
+   	    android:id="@+id/ll_show_rows_menu"
+	    android:layout_width="match_parent"
+	    android:divider="@drawable/divider_vertical"
+	    android:showDividers="middle"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal" >
+	    <Button 
+	        style="@style/MyStyle_head_Button"
+	        android:id="@+id/bt_saveSheet" 
+	        android:textColor="#FF0000"
+	        android:background="@drawable/excel_bt_save_color_bg"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_width="60dp"
+	    	android:text="保存"
+	        />
+	    <Button
+	        android:id="@+id/bt_selectSheet" 
+	        style="@style/MyStyle_head_Button"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_width="120dp"
+	    	android:text="选择表名"
+	        />
+	    <Button 
+	        android:id="@+id/bt_add_delete_oneRow" 
+	        style="@style/MyStyle_head_Button"
+	        android:focusable="true"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_width="60dp"
+	    	android:text="行操作"
+	        />
+	   <Button
+	        android:id="@+id/bt_add_delete_oneColumn" 
+	        style="@style/MyStyle_head_Button"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:layout_width="60dp"
+	    	android:focusable="true"
+	    	android:text="列操作"
+	        />
+	    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:descendantFocusability="beforeDescendants"
+		    android:orientation="horizontal" >
+   		
+		    <com.app.jianyiexcel.view.LinearLayoutScrollContainer
+		        android:id="@+id/ll_rows_scrooll_container"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:focusable="true" >
+		        
+			    <com.app.jianyiexcel.view.CellHorizontalScrollView 
+			        android:id="@+id/cHSV_rows_horizontal"
+			        android:layout_width="match_parent"
+			    	android:layout_height="match_parent"
+			    	android:scrollbars="none"
+			    	android:focusable="true"
+			        >
+			        <LinearLayout 
+			            android:id="@+id/ll_rows_horizontal"
+			            android:focusable="true"
+			            android:divider="@drawable/divider_vertical"
+			            android:showDividers="middle"
+			            android:orientation="horizontal"
+			            android:layout_width="match_parent"
+			    		android:layout_height="match_parent">
+				       <TextView 
+					        android:id="@+id/tv_show_rows_menu"
+					        android:text=""
+					        android:textAppearance="?android:attr/textAppearanceMedium"
+					        android:gravity="center"
+					        android:layout_width="match_parent"
+					        android:textSize="12sp"
+					        android:background="@null"
+					    	android:layout_height="match_parent"
+			        	/>
+				       
+			       </LinearLayout>
+			    </com.app.jianyiexcel.view.CellHorizontalScrollView >
+		    </com.app.jianyiexcel.view.LinearLayoutScrollContainer>    
+		</LinearLayout>
+    </LinearLayout>
+    <include 
+        android:id="@+id/ll_show_row"
+        layout="@layout/head_show_rows"
+        />
+    <ListView
+        android:id="@+id/lv_show_rows" 
+        android:divider="@drawable/driver_h"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+   	></ListView>
+</LinearLayout>

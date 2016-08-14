@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:background="#66CCFF"
+        android:showDividers="middle"
+        android:layout_width="wrap_content"
+   		android:layout_height="match_parent">
+   		<TextView 
+	        android:id="@+id/tv_item_cell"
+	        android:text="1"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:layout_width="40dp"
+	        android:gravity="center"
+	        android:textSize="16sp"
+	        android:background="@null"
+	    	android:layout_height="match_parent"
+        />
+   	</LinearLayout>
+    
+    <View
+        android:background="#666666" 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        />
+      <LinearLayout 
+           android:id="@+id/ll_item_horizontal"
+           android:focusable="false"
+           android:layout_width="match_parent"
+   		   android:layout_height="wrap_content">
+   		
+	  	<Button 
+	        android:id="@+id/bt_item_cell"
+	        style="@style/MyStyle_Button"
+	    	android:textAppearance="?android:attr/textAppearanceMedium"
+	    	android:text="key"
+	        />
+	  	<View
+	        android:background="#666666" 
+	        android:layout_width="1dp"
+	        android:layout_height="match_parent"
+	        />
+	    <EditText 
+	        android:id="@+id/et_item_cell"
+	        style="@style/MyStyle_EditText"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:inputType="textMultiLine"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        />
+   	</LinearLayout>
+       
+</LinearLayout>

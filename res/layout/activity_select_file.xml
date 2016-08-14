@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/driver_h"
+    android:showDividers="middle"
+    android:orientation="vertical"
+    tools:context=".SelectFile" >
+
+    <Button 
+        android:id="@+id/bt_create_excel_file"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+    	android:textSize="20sp"
+    	android:text="新建Excel文件"
+    	android:gravity="center"/>
+    <TextView 
+        android:id="@+id/tv_select_file"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+    	android:textSize="16sp"
+    	android:layout_margin="10dp"
+    	android:text="绝对路径"
+    	android:gravity="center_vertical"
+        />
+    <ListView 
+        android:id="@+id/lv_file_name"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        >
+        
+    </ListView>
+
+</LinearLayout>

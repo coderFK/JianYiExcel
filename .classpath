@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="lib" path="G:/Java学习资料/poi/poi-bin-3.14-beta1-20151223/poi-3.14-beta1/poi-3.14-beta1-20151223.jar"/>
+	<classpathentry exported="true" kind="lib" path="G:/Java学习资料/poi/poi-bin-3.14-beta1-20151223/poi-3.14-beta1/poi-ooxml-3.14-beta1-20151223.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
